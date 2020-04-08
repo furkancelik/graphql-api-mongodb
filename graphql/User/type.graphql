@@ -1,0 +1,48 @@
+scalar Date
+
+type Token {
+  token: String!
+}
+
+type User {
+  id: ID!
+  fullName: String
+  username: String
+  email: String
+  posts: [Post]
+  createdAt: Date
+}
+
+type Mutation {
+  register(data: registerUserInput!): Token
+  login(data: loginUserInput!): Token
+  updateProfile(data: updateUserInput!): User
+  createUser(data: registerUserInput!): User
+  removeUser(id: ID!): Boolean
+  updateUser(id: ID!, data: updateUserInput!): User
+}
+
+type Query {
+  me: User
+  users: [User]
+  user(id: ID!): User
+}
+
+input registerUserInput {
+  fullName: String
+  email: String
+  username: String
+  password: String
+}
+
+input loginUserInput {
+  username: String
+  password: String
+}
+
+input updateUserInput {
+  fullName: String
+  email: String
+  username: String
+  password: String
+}
