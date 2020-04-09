@@ -60,7 +60,7 @@ app.use(express.static("public"));
         User,
         Post,
         activeUser: user,
-        dataLoaders: dataLoaders,
+        dataLoaders: dataLoaders(),
       };
     },
     tracing: true,
