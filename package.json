@@ -4,7 +4,8 @@
   "main": "server.js",
   "license": "MIT",
   "scripts": {
-    "dev": "NODE_ENV=development nodemon server.js --ext js,graphql"
+    "dev": "NODE_ENV=development nodemon server.js --ext js,graphql",
+    "seed": "node seeder/index.js"
   },
   "dependencies": {
     "@graphql-toolkit/file-loading": "0.9.9",
@@ -17,6 +18,7 @@
     "dotenv": "8.2.0",
     "express": "4.17.1",
     "fs": "0.0.1-security",
+    "globby": "11.0.1",
     "graphql": "14.6.0",
     "graphql-import": "1.0.1",
     "graphql-upload": "10.0.0",
@@ -24,7 +26,7 @@
     "mongoose": "5.9.6",
     "mongoose-delete": "0.5.1",
     "path": "0.12.7",
-    "slug": "^2.1.1"
+    "slug": "2.1.1"
   },
   "resolutions": {
     "**/**/fs-capacitor": "6.0.0"
