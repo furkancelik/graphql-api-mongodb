@@ -10,7 +10,7 @@
   "dependencies": {
     "@graphql-toolkit/file-loading": "0.9.9",
     "@graphql-toolkit/schema-merging": "0.9.9",
-    "apollo-server-express": "2.11.0",
+    "apollo-server-express": "2.14.2",
     "bcryptjs": "2.4.3",
     "body-parser": "1.19.0",
     "cors": "2.8.5",
